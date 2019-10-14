@@ -1,0 +1,71 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  color: #409eff;
+  text-decoration: none
+}
+body,html{
+  font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','SimSun',sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: .23em;
+}
+code {
+  display: initial;
+  padding: 0 4px;
+  margin: 0 5px;
+  background: #f9f2f4;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #c7254e;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+pre {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  word-wrap: break-word !important;
+  white-space: pre-wrap !important;
+  padding: 10px;
+  margin: 15px 0;
+  display: block;
+  line-height: 1.7;
+  background-color: #201e2f;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  overflow-x: auto;
+  border: 1px solid #201e2f;
+  color: #f8f8f2;
+}
+pre code {
+  display: block;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border-radius: 0;
+  color: #f8f8f2;
+}
+.hljs-name, .hljs-attr, .hljs-keyword {
+  color: #f92672;
+}
+.hljs-string {
+  color: #e6db74;
+}
+.hljs-comment {
+  color: #75715e;
+}
+.hljs-selector-class, .hljs-keyword {
+  color: #a6e22e;
+}
+.hljs-attribute {
+  color: #66d9ef;
+}
+.hljs-number {
+  color: #ae81ff;
+}
