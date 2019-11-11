@@ -21,7 +21,7 @@
 <span class="hljs-comment">* @param { number } p3 参数3的说明（可选）</span>
 <span class="hljs-comment">* @return { Object } 返回值描述</span>
 <span class="hljs-comment">* /</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(p1, p2, p3) {
+<span class="hljs-function">function</span> <span class="hljs-title">foo</span>(p1, p2, p3) {
   <span class="hljs-keyword">var</span> p3 = p3 || <span class="hljs-number">10</span>
   <span class="keyword">return</span> {
     p1: p1,
@@ -61,15 +61,32 @@
     </ul>
     <h2>JS命名</h2>
     <ul>
-      <li><strong>变量</strong>，使用驼峰命名法（字符串类型使用单引号<code>''</code>）</li>
+      <li><strong>变量</strong>，使用驼峰命名（字符串类型使用单引号<code>''</code>）</li>
       <pre><code><span class="hljs-keyword">var</span> firstName = ''</code></pre>
       <li><strong>私有属性、变量和方法</strong>以下划线<code>_</code>开头</li>
       <pre><code><span class="hljs-keyword">var</span> _privateMethod = {}</code></pre>
       <li><strong>常量</strong>，使用全部字母大写，单词间下划线分隔的命名方式</li>
       <pre><code><span class="hljs-keyword">var</span> HTML_ENTITY = {}</code></pre>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><strong>函数</strong>、<strong>函数的参数</strong>使用驼峰命名</li>
+      <pre><code><span class="hljs-keyword">function</span> <span class="hljs-title">stringFormat</span>(source) {}
+
+<span class="hljs-function">function</span> <span class="hljs-title">hear</span>(theBells) {}</code></pre>
+      <li><strong>类</strong>使用首字母大写命名，类的<strong>方法/属性</strong>使用驼峰命名</li>
+      <pre><code><span class="hljs-function">function</span> <span class="hljs-title">TextNode</span>(value, engine) {
+  <span class="hljs-keyword">this</span>.value = value;
+  <span class="hljs-keyword">this</span>.engine = engine;
+}
+
+TextNode.prototype.clone = <span class="hljs-keyword">function</span>() {
+  <span class="hljs-keyword">return this</span>;
+};</code></pre>
+      <li><strong>枚举变量</strong>使用驼峰命名，<strong>枚举的属性</strong>，使用全部字母大写，单词间下划线分隔的命名方式</li>
+      <pre><code><span class="hljs-keyword">var</span> TargetState = {
+  READING: <span class="hljs-number">1</span>,
+  READED: <span class="hljs-number">2</span>,
+  APPLIED: <span class="hljs-number">3</span>,
+  READY: <span class="hljs-number">4</span>
+};</code></pre>
     </ul>
   </div>
 </template>

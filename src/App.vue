@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <div class="nav">
-      <ul>
+    <div class="nav pull-left">
+      <ul class="nav-menu">
         <li>
           <router-link to="/">页面规范</router-link>
         </li>
@@ -33,40 +33,14 @@
       </ul>
 
     </div>
-    <div class="" style="display: inline-block;width: 900px;">
+    <div
+      class="page-inner pull-left"
+    >
       <router-view />
     </div>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-.nav {
-  display: inline-block;
-  padding: 15px;
-  width: 300px;
-  vertical-align: top;
-}
-.nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  transition: top 0.5s ease;
-}
-.nav a {
-  text-decoration: none;
-  color: #2c3e50;
-}
-.nav ul li {
-  padding: 10px 15px;
-  list-style: none;
-}
-.nav a.router-link-exact-active {
-  color: #42b983;
-}
+
 </style>
